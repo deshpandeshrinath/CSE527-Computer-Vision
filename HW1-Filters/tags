@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HEADER_H	header.h	/^#define HEADER_H$/;"	d
+Question1	main.cpp	/^bool Question1(char* argv[])$/;"	f
+Question1	main.py	/^def Question1():$/;"	f
+Question2	main.cpp	/^bool Question2(char* argv[])$/;"	f
+Question2	main.py	/^def Question2():$/;"	f
+Question3	main.cpp	/^bool Question3(char* argv[])$/;"	f
+Question3	main.py	/^def Question3():$/;"	f
+cv2	main.py	/^import cv2$/;"	i
+deconvolution	main.cpp	/^Mat deconvolution(const Mat& img_in)$/;"	f
+deconvolution	main.py	/^def deconvolution(img_in):$/;"	f
+function_launch	main.py	/^   function_launch = {$/;"	v
+help_message	main.cpp	/^void help_message(char* argv[])$/;"	f
+help_message	main.py	/^def help_message():$/;"	f
+high_pass_filter	main.cpp	/^Mat high_pass_filter(const Mat& img_in)$/;"	f
+high_pass_filter	main.py	/^def high_pass_filter(img_in):$/;"	f
+histogram_equalization	main.cpp	/^Mat histogram_equalization(const Mat& img_in)$/;"	f
+histogram_equalization	main.py	/^def histogram_equalization(img_in):$/;"	f
+laplacian_pyramid_blending	main.cpp	/^Mat laplacian_pyramid_blending(const Mat& img_in1, const Mat& img_in2)$/;"	f
+laplacian_pyramid_blending	main.py	/^def laplacian_pyramid_blending(img_in1, img_in2):$/;"	f
+low_pass_filter	main.cpp	/^Mat low_pass_filter(const Mat& img_in)$/;"	f
+low_pass_filter	main.py	/^def low_pass_filter(img_in):$/;"	f
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+numpy	main.py	/^import numpy$/;"	i
+os	main.py	/^import os$/;"	i
+question_number	main.py	/^      question_number = int(sys.argv[1])$/;"	v
+question_number	main.py	/^   question_number = -1$/;"	v
+sys	main.py	/^import sys$/;"	i
