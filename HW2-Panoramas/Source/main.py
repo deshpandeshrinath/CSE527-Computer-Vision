@@ -329,7 +329,7 @@ def Cylindrical_warping(img1, img2, img3):
     img2, mask_cyl = cylindricalWarpImage(img2, K)
     img3, mask_cyl = cylindricalWarpImage(img3, K)
     height_init, width_init = img1.shape
-    img1 = cv2.copyMakeBorder(img1,200,200,500,500,
+    img1 = cv2.copyMakeBorder(img1,50,50,300,300,
                           cv2.BORDER_CONSTANT)
     height, width = img1.shape
     img_int = img1
@@ -367,7 +367,7 @@ def Bonus_cylindrical_warping(img1, img2, img3):
     mask_l, mask_cyl = cylindricalWarpImage(mask_l, K)
 
     height_init, width_init = img1.shape
-    img1 = cv2.copyMakeBorder(img1,200,200,500,500,
+    img1 = cv2.copyMakeBorder(img1,50,50,300,300,
                           cv2.BORDER_CONSTANT)
     height, width = img1.shape
     img_int = img1
@@ -381,13 +381,13 @@ def Bonus_cylindrical_warping(img1, img2, img3):
     img_int_r = cv2.warpAffine(img2, affine_r, (width, height))
     mask_r_warped = cv2.warpAffine(mask_r, affine_r, (width, height))
     img_int_r = Laplacian_Pyramid_Blending_with_mask(
-        img1,img_int_r, mask_r_warped, num_levels = 4)
+        img1,img_int_r, mask_r_warped, num_levels = 3)
 
     # Final Stitched image
     img_out = cv2.warpAffine(img3, affine_l, (width, height))
     mask_l_warped = cv2.warpAffine(mask_l, affine_l, (width, height))
     img_out =  Laplacian_Pyramid_Blending_with_mask(
-        img_int_r, img_out, mask_l_warped, num_levels = 4)
+        img_int_r, img_out, mask_l_warped, num_levels = 3)
 
     # Write out the result
     output_name = sys.argv[5] + "output_cylindrical_lpb.png"
@@ -432,7 +432,6 @@ def RMSD(target, master):
 
 if __name__ == '__main__':
     question_number = -1
-
     # Validate the input arguments
     if (len(sys.argv) != 6):
         help_message()
