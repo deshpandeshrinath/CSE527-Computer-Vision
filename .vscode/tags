@@ -4,51 +4,93 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Bonus_cylindrical_warping	../HW2-Panoramas/main.py	/^def Bonus_cylindrical_warping(img1, img2, img3):$/;"	kind:function	line:356
-Bonus_perspective_warping	../HW2-Panoramas/main.py	/^def Bonus_perspective_warping(img1, img2, img3):$/;"	kind:function	line:288
-Cylindrical_warping	../HW2-Panoramas/main.py	/^def Cylindrical_warping(img1, img2, img3):$/;"	kind:function	line:324
-Laplacian_Pyramid_Blending_with_mask	../HW2-Panoramas/main.py	/^def Laplacian_Pyramid_Blending_with_mask(A, B, m, num_levels = 6):$/;"	kind:function	line:242
-Perspective_warping	../HW2-Panoramas/main.py	/^def Perspective_warping(img1, img2, img3):$/;"	kind:function	line:218
+Bonus_cylindrical_warping	../HW2-Panoramas/Source/main.py	/^def Bonus_cylindrical_warping(img1, img2, img3):$/;"	kind:function	line:355
+Bonus_perspective_warping	../HW2-Panoramas/Source/main.py	/^def Bonus_perspective_warping(img1, img2, img3):$/;"	kind:function	line:286
+Cylindrical_warping	../HW2-Panoramas/Source/main.py	/^def Cylindrical_warping(img1, img2, img3):$/;"	kind:function	line:323
+Laplacian_Pyramid_Blending_with_mask	../HW2-Panoramas/Source/main.py	/^def Laplacian_Pyramid_Blending_with_mask(A, B, m, num_levels = 6):$/;"	kind:function	line:241
+Perspective_warping	../HW2-Panoramas/Source/main.py	/^def Perspective_warping(img1, img2, img3):$/;"	kind:function	line:217
 Question1	../HW1-Filters/Source/main.py	/^def Question1():$/;"	kind:function	line:74
 Question2	../HW1-Filters/Source/main.py	/^def Question2():$/;"	kind:function	line:163
 Question3	../HW1-Filters/Source/main.py	/^def Question3():$/;"	kind:function	line:261
-RMSD	../HW2-Panoramas/main.py	/^def RMSD(target, master):$/;"	kind:function	line:375
+RMSD	../HW2-Panoramas/Source/main.py	/^def RMSD(target, master):$/;"	kind:function	line:406
+camShift_tracker	../HW3-DetectionTracking/detection_tracking_local.py	/^def camShift_tracker(v, file_name):$/;"	kind:function	line:64
 config.py	../HW2-Panoramas/.ropeproject/config.py	1;"	kind:file	line:1
+config.py	../HW2-Panoramas/Source/.ropeproject/config.py	1;"	kind:file	line:1
+config.py	../HW3-DetectionTracking/.ropeproject/config.py	1;"	kind:file	line:1
 cv2	../HW1-Filters/Source/main.py	/^import cv2$/;"	kind:namespace	line:8
-cv2	../HW2-Panoramas/main.py	/^import cv2$/;"	kind:namespace	line:6
-cylindricalWarpImage	../HW2-Panoramas/main.py	/^def cylindricalWarpImage(img1, K, savefig=False):$/;"	kind:function	line:114
+cv2	../HW2-Panoramas/Source/main.py	/^import cv2$/;"	kind:namespace	line:6
+cv2	../HW3-DetectionTracking/detection_tracking.py	/^import cv2$/;"	kind:namespace	line:3
+cv2	../HW3-DetectionTracking/detection_tracking_local.py	/^import cv2$/;"	kind:namespace	line:3
+cylindricalWarpImage	../HW2-Panoramas/Source/main.py	/^def cylindricalWarpImage(img1, K, savefig=False):$/;"	kind:function	line:114
 deconvolution	../HW1-Filters/Source/main.py	/^def deconvolution(im):$/;"	kind:function	line:152
-feature_matching	../HW2-Panoramas/main.py	/^def feature_matching(img1, img2, savefig=False):$/;"	kind:function	line:50
+detect_one_face	../HW3-DetectionTracking/detection_tracking.py	/^def detect_one_face(im):$/;"	kind:function	line:24
+detect_one_face	../HW3-DetectionTracking/detection_tracking_local.py	/^def detect_one_face(im):$/;"	kind:function	line:27
+detection_tracking.py	../HW3-DetectionTracking/detection_tracking.py	1;"	kind:file	line:1
+detection_tracking_local.py	../HW3-DetectionTracking/detection_tracking_local.py	1;"	kind:file	line:1
+face_cascade	../HW3-DetectionTracking/detection_tracking.py	/^face_cascade = cv2.CascadeClassifier('\/usr\/local\/share\/OpenCV\/haarcascades\/haarcascade_frontalface_default.xml')$/;"	kind:variable	line:7
+face_cascade	../HW3-DetectionTracking/detection_tracking_local.py	/^face_cascade = cv2.CascadeClassifier($/;"	kind:variable	line:8
+feature_matching	../HW2-Panoramas/Source/main.py	/^def feature_matching(img1, img2, savefig=False):$/;"	kind:function	line:50
 ft	../HW1-Filters/Source/main.py	/^def ft(im, newsize=None):$/;"	kind:function	line:94
 function_launch	../HW1-Filters/Source/main.py	/^    function_launch = {$/;"	kind:variable	line:301
-function_launch	../HW2-Panoramas/main.py	/^    function_launch = {$/;"	kind:variable	line:418
-getTransform	../HW2-Panoramas/main.py	/^def getTransform(src, dst, method='affine'):$/;"	kind:function	line:177
+function_launch	../HW2-Panoramas/Source/main.py	/^    function_launch = {$/;"	kind:variable	line:448
+getTransform	../HW2-Panoramas/Source/main.py	/^def getTransform(src, dst, method='affine'):$/;"	kind:function	line:177
 help_message	../HW1-Filters/Source/main.py	/^def help_message():$/;"	kind:function	line:12
-help_message	../HW2-Panoramas/main.py	/^def help_message():$/;"	kind:function	line:12
+help_message	../HW2-Panoramas/Source/main.py	/^def help_message():$/;"	kind:function	line:12
+help_message	../HW3-DetectionTracking/detection_tracking.py	/^def help_message():$/;"	kind:function	line:9
+help_message	../HW3-DetectionTracking/detection_tracking_local.py	/^def help_message():$/;"	kind:function	line:12
 high_pass_filter	../HW1-Filters/Source/main.py	/^def high_pass_filter(img_in):$/;"	kind:function	line:131
 histogram_equalization	../HW1-Filters/Source/main.py	/^def histogram_equalization(img_in):$/;"	kind:function	line:53
+hsv_histogram_for_window	../HW3-DetectionTracking/detection_tracking.py	/^def hsv_histogram_for_window(frame, window):$/;"	kind:function	line:32
+hsv_histogram_for_window	../HW3-DetectionTracking/detection_tracking_local.py	/^def hsv_histogram_for_window(frame, window):$/;"	kind:function	line:40
 ift	../HW1-Filters/Source/main.py	/^def ift(shift):$/;"	kind:function	line:99
-input_image1	../HW2-Panoramas/main.py	/^    input_image1 = cv2.imread(sys.argv[2], 0)$/;"	kind:variable	line:415
-input_image2	../HW2-Panoramas/main.py	/^    input_image2 = cv2.imread(sys.argv[3], 0)$/;"	kind:variable	line:416
-input_image3	../HW2-Panoramas/main.py	/^    input_image3 = cv2.imread(sys.argv[4], 0)$/;"	kind:variable	line:417
+input_image1	../HW2-Panoramas/Source/main.py	/^    input_image1 = cv2.imread(sys.argv[2], 0)$/;"	kind:variable	line:445
+input_image2	../HW2-Panoramas/Source/main.py	/^    input_image2 = cv2.imread(sys.argv[3], 0)$/;"	kind:variable	line:446
+input_image3	../HW2-Panoramas/Source/main.py	/^    input_image3 = cv2.imread(sys.argv[4], 0)$/;"	kind:variable	line:447
+kalmanFilter_tracker	../HW3-DetectionTracking/detection_tracking_local.py	/^def kalmanFilter_tracker(v, file_name):$/;"	kind:function	line:203
 laplacian_pyramid_blending	../HW1-Filters/Source/main.py	/^def laplacian_pyramid_blending(A, B):$/;"	kind:function	line:192
 low_pass_filter	../HW1-Filters/Source/main.py	/^def low_pass_filter(img_in):$/;"	kind:function	line:105
 main.py	../HW1-Filters/Source/main.py	1;"	kind:file	line:1
-main.py	../HW2-Panoramas/main.py	1;"	kind:file	line:1
-math	../HW2-Panoramas/main.py	/^import math$/;"	kind:namespace	line:9
-matplotlib	../HW2-Panoramas/main.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+main.py	../HW2-Panoramas/Source/main.py	1;"	kind:file	line:1
+math	../HW2-Panoramas/Source/main.py	/^import math$/;"	kind:namespace	line:9
+matplotlib	../HW2-Panoramas/Source/main.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+matplotlib	../HW3-DetectionTracking/detection_tracking.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:4
+matplotlib	../HW3-DetectionTracking/detection_tracking_local.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:4
 np	../HW1-Filters/Source/main.py	/^import numpy as np$/;"	kind:namespace	line:9
-np	../HW2-Panoramas/main.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../HW2-Panoramas/Source/main.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../HW3-DetectionTracking/detection_tracking.py	/^import numpy as np$/;"	kind:namespace	line:5
+np	../HW3-DetectionTracking/detection_tracking_local.py	/^import numpy as np$/;"	kind:namespace	line:5
+opticalFlow_tracker	../HW3-DetectionTracking/detection_tracking_local.py	/^def opticalFlow_tracker(v, file_name):$/;"	kind:function	line:278
 os	../HW1-Filters/Source/main.py	/^import os$/;"	kind:namespace	line:6
-os	../HW2-Panoramas/main.py	/^import os$/;"	kind:namespace	line:4
-plt	../HW2-Panoramas/main.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+os	../HW2-Panoramas/Source/main.py	/^import os$/;"	kind:namespace	line:4
+os	../HW3-DetectionTracking/detection_tracking.py	/^import os$/;"	kind:namespace	line:1
+os	../HW3-DetectionTracking/detection_tracking_local.py	/^import os$/;"	kind:namespace	line:1
+particleFilter_tracker	../HW3-DetectionTracking/detection_tracking_local.py	/^def particleFilter_tracker(v, file_name):$/;"	kind:function	line:118
+particle_evaluator	../HW3-DetectionTracking/detection_tracking_local.py	/^def particle_evaluator(back_proj, particle):$/;"	kind:function	line:36
+plt	../HW2-Panoramas/Source/main.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+plt	../HW3-DetectionTracking/detection_tracking.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:4
+plt	../HW3-DetectionTracking/detection_tracking_local.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:4
 project_opened	../HW2-Panoramas/.ropeproject/config.py	/^def project_opened(project):$/;"	kind:function	line:113
+project_opened	../HW2-Panoramas/Source/.ropeproject/config.py	/^def project_opened(project):$/;"	kind:function	line:113
+project_opened	../HW3-DetectionTracking/.ropeproject/config.py	/^def project_opened(project):$/;"	kind:function	line:113
 question_number	../HW1-Filters/Source/main.py	/^        question_number = int(sys.argv[1])$/;"	kind:variable	line:286
 question_number	../HW1-Filters/Source/main.py	/^    question_number = -1$/;"	kind:variable	line:279
-question_number	../HW2-Panoramas/main.py	/^        question_number = int(sys.argv[1])$/;"	kind:variable	line:410
-question_number	../HW2-Panoramas/main.py	/^    question_number = -1$/;"	kind:variable	line:403
+question_number	../HW2-Panoramas/Source/main.py	/^        question_number = int(sys.argv[1])$/;"	kind:variable	line:440
+question_number	../HW2-Panoramas/Source/main.py	/^    question_number = -1$/;"	kind:variable	line:434
+question_number	../HW3-DetectionTracking/detection_tracking.py	/^        question_number = int(sys.argv[1])$/;"	kind:variable	line:110
+question_number	../HW3-DetectionTracking/detection_tracking.py	/^    question_number = -1$/;"	kind:variable	line:103
+question_number	../HW3-DetectionTracking/detection_tracking_local.py	/^        question_number = int(sys.argv[1])$/;"	kind:variable	line:374
+question_number	../HW3-DetectionTracking/detection_tracking_local.py	/^    question_number = -1$/;"	kind:variable	line:367
+resample	../HW3-DetectionTracking/detection_tracking.py	/^def resample(weights):$/;"	kind:function	line:43
+resample	../HW3-DetectionTracking/detection_tracking_local.py	/^def resample(weights):$/;"	kind:function	line:52
 set_prefs	../HW2-Panoramas/.ropeproject/config.py	/^def set_prefs(prefs):$/;"	kind:function	line:5
-stitch_images	../HW2-Panoramas/main.py	/^def stitch_images(img1, img2):$/;"	kind:function	line:196
-stitch_with_blending	../HW2-Panoramas/main.py	/^def stitch_with_blending(img1, img2):$/;"	kind:function	line:211
+set_prefs	../HW2-Panoramas/Source/.ropeproject/config.py	/^def set_prefs(prefs):$/;"	kind:function	line:5
+set_prefs	../HW3-DetectionTracking/.ropeproject/config.py	/^def set_prefs(prefs):$/;"	kind:function	line:5
+skeleton_tracker	../HW3-DetectionTracking/detection_tracking.py	/^def skeleton_tracker(v, file_name):$/;"	kind:function	line:54
+stitch_images	../HW2-Panoramas/Source/main.py	/^def stitch_images(img1, img2):$/;"	kind:function	line:195
+stitch_with_blending	../HW2-Panoramas/Source/main.py	/^def stitch_with_blending(img1, img2):$/;"	kind:function	line:210
 sys	../HW1-Filters/Source/main.py	/^import sys$/;"	kind:namespace	line:7
-sys	../HW2-Panoramas/main.py	/^import sys$/;"	kind:namespace	line:5
+sys	../HW2-Panoramas/Source/main.py	/^import sys$/;"	kind:namespace	line:5
+sys	../HW3-DetectionTracking/detection_tracking.py	/^import sys$/;"	kind:namespace	line:2
+sys	../HW3-DetectionTracking/detection_tracking_local.py	/^import sys$/;"	kind:namespace	line:2
+video	../HW3-DetectionTracking/detection_tracking.py	/^    video = cv2.VideoCapture(sys.argv[2]);$/;"	kind:variable	line:116
+video	../HW3-DetectionTracking/detection_tracking_local.py	/^    video = cv2.VideoCapture(sys.argv[2])$/;"	kind:variable	line:380
