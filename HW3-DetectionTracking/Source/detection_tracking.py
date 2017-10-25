@@ -308,6 +308,7 @@ if __name__ == '__main__':
         if (question_number > 4 or question_number < 1):
             print("Input parameters out of bound ...")
             sys.exit()
+            
 
     # read video file
     video = cv2.VideoCapture(sys.argv[2])
