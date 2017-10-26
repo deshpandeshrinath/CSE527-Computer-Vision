@@ -14,7 +14,9 @@ mode = True  # if True, draw rectangle. Press 'm' to toggle to curve
 ix, iy = -1, -1
 radius = 10  # thickness of line being drawn
 out = np.zeros((256, 256, 3), np.uint8)
-drag_counter = 0
+drag_counter = 0 # Counting steps in Dragging
+fg_flag = False # Flag indicating that fg marking is done
+bg_flag = False # Flag indicating that bf marking is done
 
 
 def help_message():
@@ -170,7 +172,7 @@ def create_background_filter(img_marking):
 
 # mouse callback function
 def draw_circle(event, x, y, flags, param):
-    global ix, iy, drawing, mode, radius, out, drag_counter
+    global ix, iy, drawing, mode, radius, out, drag_counter, fg_flag, bg_flag
 
     if event == cv2.EVENT_LBUTTONDOWN:
         drawing = True
@@ -181,13 +183,15 @@ def draw_circle(event, x, y, flags, param):
             if mode == True:
                 cv2.circle(copy, (x, y), radius, (0, 0, 255), -1)
                 cv2.circle(img_marking, (x, y), radius, (0, 0, 255), -1)
-                if drag_counter % 5 == 0:
+                fg_flag = True
+                if drag_counter % 5 == 0 and fg_flag and bg_flag:
                     create_background_filter(img_marking)
                 drag_counter = drag_counter + 1
             else:
                 cv2.circle(img_marking, (x, y), radius, (255, 0, 0), -1)
                 cv2.circle(copy, (x, y), radius, (255, 0, 0), -1)
-                if drag_counter % 5 == 0:
+                bg_flag = True
+                if drag_counter % 5 == 0 and fg_flag and bg_flag:
                     create_background_filter(img_marking)
                 drag_counter = drag_counter + 1
 
@@ -195,13 +199,17 @@ def draw_circle(event, x, y, flags, param):
         drawing = False
         drag_counter = 0
         if mode == True:
+            fg_flag = True
             cv2.circle(copy, (x, y), radius, (0, 0, 255), -1)
             cv2.circle(img_marking, (x, y), radius, (0, 0, 255), -1)
-            create_background_filter(img_marking)
+            if fg_flag and bg_flag:
+                create_background_filter(img_marking)
         else:
+            bg_flag = True
             cv2.circle(copy, (x, y), radius, (255, 0, 0), -1)
             cv2.circle(img_marking, (x, y), radius, (255, 0, 0), -1)
-            create_background_filter(img_marking)
+            if fg_flag and bg_flag:
+                create_background_filter(img_marking)
 
 
 if __name__ == '__main__':
