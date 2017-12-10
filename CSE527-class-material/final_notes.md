@@ -1,0 +1,45 @@
+# Computer Vision - Part 2 (After Midterm)
+
+## Syllabus
+- Segmentation
+  - Clustering
+    - Super-pixels
+  - Graph cuts
+    - Binary
+    - Energy based
+- Multi-view Geometry (MVG)
+  - Epipolar Geometry
+  - Essential and Fundamental Matrices
+  - Depth from Disparity
+- Stereo
+  - Dense Stereo
+  - Structured Light
+  - Camera Calibration
+  - Projector-Camera Duality
+  - Patterns and Laser-planes
+- Structure from Motion
+- Machine Learning
+  - Nearest Neighbor Classifiers
+  - Linear Classifiers
+  - Generalization
+  - Optimization
+  - Neural Networks
+    - Perceptrons
+    - Multi-layer Perceptrons
+    - Gradients - Backpropagation
+    - Activation functions
+    - Softmax again
+  - Deep Learning
+    - Convolution layers
+      - Padding, Stride
+      - Pooling
+      - Region-CNNs
+    - ML problems
+      - Overfitting
+      - Regularization
+      - Problems with data
+    - Segmentation
+    - Auto-encoders
+    - Variational Auto-encoders
+    - Generative Adversarial Networks
+
