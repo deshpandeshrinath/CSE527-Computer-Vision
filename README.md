@@ -6,6 +6,12 @@ Aim of this course is to gain knowledge of theory and practice in Computer Visio
 
 Github repository covers programmatic implementation of classical vision problems such as image classification, object detection and tracking, pose estimation, Structure-from-Motion, localization and mapping, deep neural networks with GPU-optimized algorithms.
 
+[Here](CSE527-class-material/midTermNotes.md) are my class notes prepare for the
+midterm.
+
+[Here](CSE527-class-material/final_notes.md) are my class notes prepare for the
+final.
+
 ## Assignments
 
 ### 1. Filters
